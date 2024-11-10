@@ -5,12 +5,17 @@ def random_integer(min, max):
     """
     Selects a random integer number in between min and max
 
-    Parameters: 
-    min (int): minimum value of the possible range 
-    max (int): maximum value of the possible range 
+    Parameters
+    ---------- 
+    min : integer 
+         minimum value of the possible range 
+    max : integer 
+         maximum value of the possible range 
 
-    Returns: 
-    int: random integer within the range of min to max
+    Returns
+    ------- 
+    int
+        random integer within the range of min to max
     """
     return random.randint(min, max)
 
@@ -19,8 +24,10 @@ def random_operator():
     """
     Selcts an arithemtic operator from the lost +, -  and * randomly. 
 
-    Returns: 
-    str: One of the three operators, randomly selected.
+    Returns
+    -------
+    str
+        One of the three operators, randomly selected.
     """
     return random.choice(['+', '-', '*'])
 
@@ -30,12 +37,17 @@ def calculate_result(n1, n2, operator):
     """
     Applies the operator to the given values n1 and n2
 
-    Parameters: 
-    n1 (int): first operand 
-    n2 (int): second operand
-    operator (str): the arithmetic operator, that is to be applied to the operands
+    Parameters
+    ----------
+    n1 : integer 
+         first operand 
+    n2 : integer 
+        second operand
+    operator: str 
+        the arithmetic operator, that is to be applied to the operands
 
-    Returns:
+    Returns
+    -------
     tuple: 
         - str:  representation of the problem
         - int:  result of the operation
@@ -59,7 +71,8 @@ def math_quiz():
     Users have to answer some simple math problems, that are randomly generated.
     The achieved score is displayed at the end.
 
-    Returns:
+    Returns
+    -------
     None
     """
 
